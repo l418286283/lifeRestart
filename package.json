@@ -8,13 +8,15 @@
         "xlsxTransform": "vt transform data",
         "xlsx2json": "vt transform -s 4 -d public data/**/*.xlsx",
         "dev": "webpack serve --open /view/index.html",
-        "build": "webpack --mode production"
+        "deploy": "gh-pages -d dist",
+        "build": "webpack --mode production --config webpack.config.cjs"
     },
     "devDependencies": {
         "@babel/core": "^7.15.4",
         "@babel/preset-env": "^7.15.4",
         "babel-loader": "^8.2.2",
         "core-js": "^3.17.2",
+        "gh-pages": "^6.1.1",
         "html-webpack-plugin": "^5.5.0",
         "v-transform": "^2.0.1",
         "webpack": "^5.64.4",
