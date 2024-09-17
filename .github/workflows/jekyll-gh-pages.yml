@@ -38,7 +38,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 'node'
+          node-version: 'latest'
           node-version-file: 'package.json'
       - name: Load npm
         run: npm run dev
