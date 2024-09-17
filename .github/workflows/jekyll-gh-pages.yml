@@ -33,7 +33,7 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./
+          source: ./view/
           destination: ./_site
       - name: Setup node
         uses: actions/setup-node@v4
